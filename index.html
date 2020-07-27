@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Freedo | Personal To-Do List</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p class="main_line">Freedo</p>
+        <p class="tag_line">
+          A free, ready to use work organizer, to get your things done,
+          properly.
+        </p>
+      </header>
+
+      <div class="main">
+        <div class="box">
+          <h2>To-Do</h2>
+          <div class="card_box" id="todo-list">
+            <div class="add" id="addInput">
+              <input
+                type="text"
+                placeholder="Add a card"
+                size="27"
+                id="inputTodo"
+              />
+              <button type="button" id="addButton">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="done">
+            <h2>Done</h2>
+            <button type="button" id="resetButton">Reset</button>
+          </div>
+          <div class="card_box" id="done-todo-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
